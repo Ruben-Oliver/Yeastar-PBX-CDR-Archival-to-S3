@@ -1,7 +1,7 @@
 import urllib.request
 import urllib.parse
 import json
-from datetime import datetime, timedelta  # Get current date for search filtering
+from datetime import datetime, timedelta 
 import os
 import logging
 import boto3
