@@ -3,9 +3,9 @@
 
 This code is designed to be run from an Amazon Lambda service, and requires an S3 bucket to be set up for archival.
 
-The script is intended to be ran weekly using EventBridge, and so it gathers logs from the last week. You can easily alter this behaviour by changing the time delta in the first few lines of the script.
+The script is intended to be ran weekly using EventBridge, and so it gathers logs from the last week. You can easily alter this behaviour by changing the time delta in line 11 of the script.
 
-
+It is also assumed that your S3 bucket lives in the same account as your Lambda function, if this is not the case you will need to alter the script and inline policy to access external buckets.
 
 # Instructions
 
