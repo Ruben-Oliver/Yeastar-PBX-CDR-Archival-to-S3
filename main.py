@@ -1,10 +1,10 @@
-import urllib.request
-import urllib.parse
-import json
-from datetime import datetime, timedelta 
-import os
-import logging
-import boto3
+import urllib.request # Querying PBX API
+import urllib.parse # Parsing PBX responses
+import json # Mostly only for formatting
+from datetime import datetime, timedelta # Formats date and time for query searches and output filename 
+import os # Import ENV variables from Lambda function
+import logging # Log to Lambda 
+import boto3 # Interact with other Amazon services (S3)
 
 # Define today and one week ago (calculated per run)
 today = datetime.now().strftime("%d/%m/%Y") + " 11:59:59 PM"
